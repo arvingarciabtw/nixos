@@ -1,21 +1,11 @@
-# Niri desktop, greetd, Noctalia, fonts, and input settings.
+# Niri desktop, greetd, fonts, and input settings.
 {
   config,
-  inputs,
   pkgs,
   ...
 }:
-let
-  noctalia = inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default;
-in
 {
-  imports = [ inputs.noctalia.nixosModules.default ];
-
   programs.niri.enable = true;
-  programs.noctalia = {
-    enable = true;
-    package = noctalia;
-  };
 
   services.greetd = {
     enable = true;

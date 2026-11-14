@@ -1,0 +1,66 @@
+[bar.default]
+start  = ["control-center", "launcher", "wallpaper", "notifications", "clipboard", "bluetooth", "workspaces"]
+center = ["clock"]
+end = ["media", "network", "volume", "brightness", "battery", "session"]
+
+padding = 20
+margin_ends = 0
+font_scale = 0.9
+widget_spacing = 20
+radius = 0
+thickness = 56
+shadow = false
+border = "surface_variant" 
+border_width = 1.0
+
+[shell]
+polkit_agent = true
+font_family = "Commit Mono"
+
+[theme]
+source = "custom"
+custom_palette = "MonokaiPro"
+mode = "dark"
+
+[widget.workspaces]
+show_labels = false
+focused_color = "#FCFCFA"
+occupied_color = "#727072"
+empty_color = "#403E41"
+
+[widget.control-center]
+color = "#A9DC76"
+
+[widget.launcher]
+color = "#FFD866"
+
+[widget.wallpaper]
+color = "#FF6188"
+
+[widget.notifications]
+color = "#FC9867"
+
+[widget.clipboard]
+color = "#78DCE8"
+
+[widget.bluetooth]
+color = "#AB9DF2"
+
+[widget.network]
+color = "#78DCE8"
+
+[widget.volume]
+color = "#FF6188"
+
+[widget.brightness]
+color = "#AB9DF2"
+
+[battery]
+warning_threshold = 25
+
+[widget.battery]
+color = "#A9DC76"
+warning_color = "#FF6188"
+
+[widget.session]
+color = "#FC9867"

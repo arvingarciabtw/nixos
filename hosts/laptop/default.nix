@@ -1,4 +1,4 @@
-# Host-specific configuration for the "nixos" machine.
+# Host-specific configuration for the laptop machine.
 { ... }:
 {
   imports = [
@@ -7,11 +7,12 @@
     ../../modules/hardware.nix
     ../../modules/desktop.nix
     ../../modules/development.nix
+    ../../modules/home-manager.nix
     ../../modules/packages.nix
     ../../modules/users.nix
   ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "laptop";
   system.stateVersion = "26.05";
 
   # UEFI boot loader.
