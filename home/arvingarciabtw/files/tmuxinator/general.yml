@@ -1,0 +1,10 @@
+name: general
+startup_window: main
+windows:
+  - main:
+      layout: main-vertical-mirrored
+      panes:
+        - nvim
+        - ditto
+        -
+        -

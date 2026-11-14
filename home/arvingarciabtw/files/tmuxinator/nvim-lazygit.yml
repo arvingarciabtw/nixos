@@ -1,0 +1,15 @@
+# Ported from config/zellij/layout.kdl
+# Zellij: nvim left | right side 30% shell / 70% stacked (shell + shell + lazygit)
+# tmux approximation: main-vertical with 4 panes
+
+name: nvim-lazygit
+startup_window: main
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - nvim
+        -
+        -
+        - lazygit

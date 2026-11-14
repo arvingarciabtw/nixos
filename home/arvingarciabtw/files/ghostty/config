@@ -1,0 +1,15 @@
+gtk-titlebar = false
+window-decoration = false
+
+font-family = "Commit Mono"
+font-size = 10
+
+adjust-cell-height = 40%
+
+theme = "Monokai Pro"
+
+window-padding-x = 16
+window-padding-y = 0
+window-padding-balance = true
+
+shell-integration-features = ssh-env,ssh-terminfo

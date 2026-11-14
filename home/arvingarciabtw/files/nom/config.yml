@@ -1,0 +1,36 @@
+configpath: /home/arvingarciabtw/.config/nom/config.yml
+version: ""
+feeds:
+    - url: https://www.arvingarcia.com/rss.xml
+      name: arvingarcia
+    - url: https://andrewkelley.me/rss.xml
+      name: andrewkelley
+    - url: https://ratfactor.com/atom.xml
+      name: davegauer
+    - url: https://matklad.github.io/feed.xml
+      name: matklad
+    - url: https://www.alexedwards.net/static/feed.rss
+      name: alexedwards
+    - url: https://rexim.github.io/rss.xml
+      name: tsoding
+    - url: https://mitchellh.com/feed.xml
+      name: mitchellh
+    - url: https://www.joshwcomeau.com/rss.xml
+      name: joshwcomeau
+    - url: https://feeds.megaphone.fm/FSI1483080183
+      name: syntaxfm
+    - url: https://dave.cheney.net/feed/atom
+      name: davecheney
+database: nom.db
+ordering: desc
+filtering:
+    defaultIncludeFeedName: false
+theme:
+    glamour: dark
+    titleColor: "62"
+    titleColorFg: "231"
+    filterColor: "62"
+    selectedItemColor: "170"
+    readIcon: ✓
+http:
+    mintls: TLS 1.2

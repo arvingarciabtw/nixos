@@ -1,0 +1,15 @@
+# Ported from config/zellij/layout-demo.kdl
+# Zellij: 2x2 grid (nvim top-left, 3 shells)
+# tmux approximation: tiled layout
+
+name: demo
+startup_window: main
+
+windows:
+  - main:
+      layout: tiled
+      panes:
+        - nvim
+        -
+        -
+        -

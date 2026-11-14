@@ -2,6 +2,7 @@
 { ... }:
 {
   imports = [
+    ./dotfiles.nix
     ./niri.nix
     ./noctalia.nix
   ];

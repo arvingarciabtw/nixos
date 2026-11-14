@@ -1,0 +1,78 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "surface": "#2D2A2E",
+    "surfaceVariant": "#221F22",
+    "outline": "#403E41",
+    "onSurface": "#FCFCFA",
+    "onSurfaceVariant": "#C1C0C0",
+    "muted": "#939293",
+    "secondary": "#727072",
+    "tertiary": "#5B595C",
+    "red": "#FF6188",
+    "orange": "#FC9867",
+    "yellow": "#FFD866",
+    "green": "#A9DC76",
+    "cyan": "#78DCE8",
+    "purple": "#AB9DF2"
+  },
+  "theme": {
+    "primary": "onSurfaceVariant",
+    "secondary": "cyan",
+    "accent": "purple",
+
+    "error": "red",
+    "warning": "yellow",
+    "success": "green",
+    "info": "cyan",
+
+    "text": "onSurface",
+    "textMuted": "secondary",
+
+    "background": "surface",
+    "backgroundPanel": "surfaceVariant",
+    "backgroundElement": "outline",
+
+    "border": "outline",
+    "borderActive": "onSurfaceVariant",
+    "borderSubtle": "outline",
+
+    "diffAdded": "green",
+    "diffRemoved": "red",
+    "diffContext": "secondary",
+    "diffHunkHeader": "cyan",
+    "diffHighlightAdded": "green",
+    "diffHighlightRemoved": "red",
+    "diffAddedBg": "surfaceVariant",
+    "diffRemovedBg": "surfaceVariant",
+    "diffContextBg": "surface",
+    "diffLineNumber": "secondary",
+    "diffAddedLineNumberBg": "surfaceVariant",
+    "diffRemovedLineNumberBg": "surfaceVariant",
+
+    "markdownText": "onSurface",
+    "markdownHeading": "onSurfaceVariant",
+    "markdownLink": "cyan",
+    "markdownLinkText": "cyan",
+    "markdownCode": "yellow",
+    "markdownBlockQuote": "secondary",
+    "markdownEmph": "purple",
+    "markdownStrong": "onSurface",
+    "markdownHorizontalRule": "outline",
+    "markdownListItem": "onSurfaceVariant",
+    "markdownListEnumeration": "cyan",
+    "markdownImage": "cyan",
+    "markdownImageText": "cyan",
+    "markdownCodeBlock": "onSurface",
+
+    "syntaxComment": "secondary",
+    "syntaxKeyword": "red",
+    "syntaxFunction": "green",
+    "syntaxVariable": "onSurface",
+    "syntaxString": "yellow",
+    "syntaxNumber": "purple",
+    "syntaxType": "cyan",
+    "syntaxOperator": "red",
+    "syntaxPunctuation": "muted"
+  }
+}
