@@ -66,7 +66,22 @@ in
 
     # XWayland
     xwayland-satellite
+
+    # For Google Drive
+    rclone
+
+    git-crypt
+    gnupg
+    pinentry-curses
+
+    fnm
   ];
+
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-curses;
+    enableSSHSupport = true;
+  };
 
   # ditto reads /dev/input/event*, so it needs a capability wrapper.
   security.wrappers.ditto = {
