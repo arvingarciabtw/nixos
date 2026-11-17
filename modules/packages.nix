@@ -63,6 +63,9 @@ in
         numpy
       ]
     ))
+
+    # XWayland
+    xwayland-satellite
   ];
 
   # ditto reads /dev/input/event*, so it needs a capability wrapper.
@@ -71,5 +74,12 @@ in
     group = "root";
     capabilities = "cap_dac_read_search=ep";
     source = "${ditto}/bin/ditto";
+  };
+
+  # Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
   };
 }
