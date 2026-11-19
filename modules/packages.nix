@@ -2,6 +2,7 @@
 { inputs, pkgs, ... }:
 let
   ditto = inputs.ditto.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  claude-code = inputs.claude-code.packages.${pkgs.stdenv.hostPlatform.system}.claude-code;
 in
 {
   environment.systemPackages = with pkgs; [
@@ -39,6 +40,7 @@ in
 
     # Desktop
     firefox
+    google-chrome
     vivaldi
     ghostty
     fuzzel
@@ -75,6 +77,9 @@ in
     pinentry-curses
 
     fnm
+
+    # AI
+    claude-code
   ];
 
   programs.gnupg.agent = {
@@ -96,5 +101,13 @@ in
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+  };
+
+  # Firefox
+  programs.firefox = {
+    enable = true;
+    preferences = {
+      "browser.link.open_newwindow.restriction" = 0;
+    };
   };
 }
