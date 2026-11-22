@@ -650,8 +650,3 @@ binds {
 
 // Autostart for the Niri compositor
 spawn-at-startup "noctalia"
-spawn-at-startup "xwayland-satellite"
-
-environment {
-  DISPLAY ":0"
-}

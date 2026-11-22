@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # Pinned newer nixpkgs for xwayland-satellite 0.8.3, which fixes Steam
+    # popup menus closing immediately under niri. Remove once the main
+    # nixpkgs input is updated past this revision.
+    nixpkgs-xwayland.url = "github:nixos/nixpkgs/2786a2a72088ecf32aea5b3ec52099e6a7cff78f";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

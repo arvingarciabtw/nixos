@@ -96,6 +96,15 @@ in
     source = "${ditto}/bin/ditto";
   };
 
+  # xwayland-satellite 0.8.2 has a regression that makes Steam's popup menus
+  # close immediately. Pin 0.8.3 until the nixpkgs pin is updated.
+  nixpkgs.overlays = [
+    (_final: prev: {
+      xwayland-satellite =
+        inputs.nixpkgs-xwayland.legacyPackages.${prev.stdenv.hostPlatform.system}.xwayland-satellite;
+    })
+  ];
+
   # Steam
   programs.steam = {
     enable = true;
